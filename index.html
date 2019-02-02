@@ -5,73 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fork Me! FCC: Test Suite Template</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:200" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    
-    <div>
+    <div class="container">
       <h1 id="title">Survey Form</h1>
-      <p id="description">Let us know how we can improve code camp</p>
-      <form action="" id="survey-form">
-        <div>
-          <label for="name" id="name-label">*Name</label>
-          <input type="text" name="name" id="name" placeholder="Enter your name" required>
-        </div>
-        <div>
-          <label for="email" id="email-label">*Email</label>
-          <input type="email" name="email" id="email" placeholder="Enter your email" required>
-        </div>
-        <div>
-          <label for="age" id="number-label">*Age</label>
-          <input type="number" name="age" id="number" placeholder="Age" min="12" max="40" required>
-        </div>
-        <div>
-            <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
-            <select>
-              <option disabled>Select an option</option>
-              <option>Student</option>
-              <option>Full time job</option>
-              <option>Full time learner</option>
-              <option>Prefer not to say</option>
-              <option>Other</option>
-            </select>
-        </div>
-        <div>
-            <label>How likely is that you would recommend freeCodeCamp to a friend?</label>
-            <div>
+
+      <div id="content">
+
+        <p id="description">Let us know how we can improve code camp</p>
+        <form action="" id="survey-form">
+          <div class="form-item">
+            <label for="name" id="name-label" >*Name</label>
+            <div class="item">
+              <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="email" id="email-label">*Email</label>
+            <div class="item">
+              <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="age" id="number-label">*Age</label>
+            <div class="item">
+              <input type="number" name="age" id="number" class="item" placeholder="Age" min="12" max="40" required>
+            </div>
+          </div>
+          <div class="form-item">
+              <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+              <div class="item">
+                <select id="dropdown" class="item">
+                  <option disabled>Select an option</option>
+                  <option>Student</option>
+                  <option>Full time job</option>
+                  <option>Full time learner</option>
+                  <option>Prefer not to say</option>
+                  <option>Other</option>
+                </select>
+              </div>
+          </div>
+          <div class="form-item">
+              <label>How likely is that you would recommend freeCodeCamp to a friend?</label>
+              <div class="item">
                 <input type="radio" name="recommend" value="definitely"> Definitely<br>
                 <input type="radio" name="recommend" value="maybe"> Maybe<br>
                 <input type="radio" name="recommend" value="not sure"> Not Sure
-            </div>          
-        </div>
-        <div>
-            <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
-            <select>
-              <option disabled>Select an option</option>
-              <option>Challenges</option>
-              <option>Projects</option>
-              <option>Community</option>
-              <option>Open source</option>
-            </select>
-        </div>
-        <div>
-            <label for="improvement" id="improvement-label">Things that should be improved in the future
-                (Check all that apply):</label>
-            <div>
-              <input type="checkbox" name="improvement" value="1"> Front end projects<br>
-              <input type="checkbox" name="improvement" value="2"> Back end projects<br>
-              <input type="checkbox" name="improvement" value="3"> Data visualisation<br>
-              <input type="checkbox" name="improvement" value="4"> Open source community<br>
+              </div>          
+          </div>
+          <div class="form-item">
+              <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+              <div class="item">
+                <select class="item">
+                  <option disabled>Select an option</option>
+                  <option>Challenges</option>
+                  <option>Projects</option>
+                  <option>Community</option>
+                  <option>Open source</option>
+                </select>
+              </div>
+          </div>
+          <div class="form-item">
+              <label for="improvement" id="improvement-label">Things that should be improved in the future
+                  (Check all that apply):</label>
+              <div class="item">
+                <input type="checkbox" name="improvement" value="1"> Front end projects<br>
+                <input type="checkbox" name="improvement" value="2"> Back end projects<br>
+                <input type="checkbox" name="improvement" value="3"> Data visualisation<br>
+                <input type="checkbox" name="improvement" value="4"> Open source community<br>
+              </div>
+          </div>
+          <div class="form-item">
+            <label for="Comments" id="Comments-label">Any Comments or Suggestions?</label>
+            <div class="item">
+              <textarea class="item" rows="4" cols="50" placeholder="Enter your comment here ..."></textarea>
             </div>
-        </div>
-        <div>
-          <label for="Comments" id="Comments-label">Any Comments or Suggestions?</label>
-          <textarea rows="4" cols="50" placeholder="Enter your comment here ..."></textarea>
-        </div>
+          </div>
 
-        <button>Submit</button>
-      </form>
+          <button>Submit</button>
+        </form>
+      </div>
     </div>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
